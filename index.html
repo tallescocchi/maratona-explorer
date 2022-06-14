@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Revele o seu destino! :D</title>
+  <script 
+      type="text/javascript" 
+      src="scripts.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <div class="container">
+  <img src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg" alt="Imagem de uma bola de cristal" />
+  <h1>Vou revelar o seu destino!</h1>
+  <p>Clique no botão "fazer pergunta" para que seu destino seja revelado.</p>
+
+  <div class="box">
+    <input id="inputPergunta" placeholder="Digite sua pergunta"/>
+    <button id="botaoPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
+  </div>
+
+  <h3 id="resposta"></h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(170, 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 3%, 45%);
+  --brand-beige: hsl(39, 100%, 97%);
+  --brand-light: hsl(148, 23%, 89%);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  background: var(--headline);
+}
+
+body img { 
+  width: 20.4rem;
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+  margin-bottom: 2.4rem;
+}
+
+body h1 {
+  font-size: 3.5rem;
+  color: var(--brand-beige);
+  line-height: 130%;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+body p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--paragraph);
+  margin-bottom: 3.2rem;
+}
+
+.container {  
+  margin-top: 4rem;
+  width: 80%;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+.box {
+  display: block;
+}
+
+.box input, button {
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+
+  text-transform: uppercase;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+
+  padding: 2rem;
+}
+
+.box input[type=text] {
+  color: var(--headline);
+}
+
+.box button {
+  background-color: var(--primary-color);
+  color: var(--brand-light);
+
+  margin-top: 1.5rem;
+  
+  transition: filter .2s;
+}
+
+.box button:hover{
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+#resposta {
+  margin-top: 3rem;
+  color: var(--brand-light);
+
+  transition: opacity 1s;
+}
+
+#resposta div {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  opacity: 0.8;
+}
